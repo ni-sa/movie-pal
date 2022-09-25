@@ -1,0 +1,95 @@
+// Header Masthead
+.header-masthead {
+    margin-bottom: 40px;
+    text-align: center;
+
+    hr {
+        &.top {
+            margin: 0;
+            border-top: 10px solid $black;
+        }
+    
+        &.middle {
+            margin: 0;
+            border-top: 1px solid $black;
+        }
+    
+        &.bottom {
+            margin: 0;
+            border-top: 2px solid $black;
+            padding-bottom: 5px;
+        }
+    }
+
+    .heading {
+        padding: 15px 0;
+
+        > .row {
+            -ms-flex-pack: center;
+            justify-content: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: $fontSecondary;
+            margin-bottom: 0;
+        }
+    
+        .mascot {
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    .description {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .additional-info {
+        padding-bottom: 15px;
+
+        a {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;            
+            text-decoration: none;
+            color: $darkgray;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .label {
+            padding-right: 5px;
+        }
+
+        .pipe {
+            color: $medgray;
+            padding: 0 10px;
+        }
+    }
+
+    @media only screen and (max-width: 991px) {
+        .heading {
+            .mascot {
+                margin-bottom: 15px;
+            }
+        }
+      }
+
+      @media only screen and (max-width: 575px) {
+        .additional-info {
+            .pipe {
+                display: none;
+            }
+
+            .group-name,
+            .group-github {
+                display: block;
+            }
+        }
+      }
+}

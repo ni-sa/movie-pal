@@ -1,0 +1,78 @@
+// Movie Collection
+.movie-collection {
+  .card {
+    background-color: $black;
+    border: 10px solid $black;
+    border-radius: 20px;
+    text-align: center;
+
+    &:hover {
+        .card-img-top {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            transition: all 0.5s ease-in-out;
+          }
+
+          .card-body {
+            background-color: $white;
+            transition: all 0.5s ease-out;
+
+            .link {
+                color: $medgray;
+                transition: all 0.5s ease-out;
+            }
+          }
+    }
+
+    .card-img-top {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      border-radius: 15px 15px 0 0;
+    }
+
+    .card-body {
+      background-color: $lightgray;
+      color: $black;
+      border-radius: 0 0 15px 15px;
+      padding: 15px;
+
+      hr {
+        margin: 10px 0;
+        border-top: 1px solid $black;
+      }
+
+      .title {
+        text-align: center;
+        font-weight: 800;
+        background-color: $black;
+        color: $white;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+
+        .year {
+          font-weight: 400;
+        }
+      }
+
+      .link {
+        display: block;
+        color: $darkgray;
+        font-weight: 800;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 5px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .row > div {
+      margin-bottom: 20px;
+    }
+  }
+}
