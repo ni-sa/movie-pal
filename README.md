@@ -1,4 +1,4 @@
-# movie-pal
+# Movie Pal
 
 ## Project setup
 ```

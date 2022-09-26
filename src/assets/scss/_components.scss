@@ -1,12 +1,19 @@
 // Movie Collection
 .movie-collection {
+  .row > div {
+    margin-bottom: 20px;
+  }
+
   .card {
+    height: 100%;
     background-color: $black;
     border: 10px solid $black;
     border-radius: 20px;
     text-align: center;
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
         .card-img-top {
             -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
@@ -67,12 +74,6 @@
           text-decoration: underline;
         }
       }
-    }
-  }
-
-  @media only screen and (max-width: 991px) {
-    .row > div {
-      margin-bottom: 20px;
     }
   }
 }

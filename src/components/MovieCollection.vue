@@ -2,7 +2,7 @@
   <div class="movie-collection">
     <b-row>
       <b-col md="6" lg="4" xl="3" v-for="movie in movies" v-bind:key="movie.sys.id">
-        <b-card class="h-100" :img-alt="movie.title" :img-src="movie.poster.url + '?w=600'" img-top>
+        <b-card :img-alt="movie.title" :img-src="movie.poster.url + '?w=600'" img-top>
             <div class="title">{{ movie.title }} <span class="year"> ({{ movie.year }})</span></div>
             <div class="director">Dir: {{ movie.director }}</div>
             <div class="format">Format: {{ movie.format }}</div>            
@@ -11,7 +11,7 @@
             <div class="time">{{ movie.date | moment("LT") }}</div>
             <hr>
             <div class="venue">{{ movie.venue }}</div>            
-            <a :href="movie.link" target="_blank" class="link">Ticket Info <b-icon icon="arrow-right" aria-hidden="true"></b-icon></a>
+            <a :href="movie.link" target="_blank" class="link">More Info <b-icon icon="arrow-right" aria-hidden="true"></b-icon></a>
         </b-card>
       </b-col>
     </b-row>
