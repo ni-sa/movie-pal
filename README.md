@@ -32,7 +32,8 @@ Customize configuration, see [configuration reference](https://cli.vuejs.org/con
 
 [Sign up](https://www.contentful.com/sign-up/) for Contentful account
 
-#### Create an `.env` file at the root of your project and copy Space ID and Contentful Delivery API from Contentful > Settings > API Keys
+#### Create an `.env` file at the root of your project
+Copy `Space ID` from Settings > General settings and `Contentful Delivery API` from Settings > API keys
 ```
 VUE_APP_CONTENTFUL_SPACE_ID=
 VUE_APP_CONTENTFUL_ACCESS_TOKEN=
