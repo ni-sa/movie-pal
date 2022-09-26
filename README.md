@@ -4,6 +4,8 @@ A curated list of repertory film screenings in Los Angeles. Built with Vue.js an
 
 [View Demo Website](https://losangeles-moviepal.netlify.app/)
 
+![Screenshot](https://user-images.githubusercontent.com/34425888/192181220-7f9f291d-793f-4f5a-bb0f-c025c1b44bd3.png)
+
 ##  Project Setup
 ```
 npm install
